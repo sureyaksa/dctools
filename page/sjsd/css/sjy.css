@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    color: #888;
+}
+
+.dbTreePanel {
+    width: 300px;
+    margin-left: 10px;
+    float: left;
+    border-right: 1px solid #ccc;
+    overflow: auto;
+}
+
+.dbConnConfPanel {
+    width: 290px;
+    height: 50px;
+    float: left;
+    margin-bottom: 4px;
+    border-bottom: 1px solid #ccc;
+}
+
+.addbtn {
+    background: url(../../../lib/images/add.gif);
+    border-style: none;
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+}
+
+.delbtn {
+    background: url(../../../lib/images/delete.gif);
+    border-style: none;
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    margin-left: 10px;
+}
+
+.dbConnCofTitlePanel {
+    line-height: 50px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bolder;
+    color: #888
+}
+
+.dbConnnCofBtnPanel {
+    width: 50px;
+    height: 20px;
+    margin-top: 30px;
+    float: right;
+}
+
+.dbInfoPanel {
+    margin-left: 320px;
+    margin-right: 10px;
+    height: 50px;
+    margin-bottom: 4px;
+    border-bottom: 1px solid #ccc;
+}
+
+.dbConnTitlePanel {
+    line-height: 50px;
+    height: 50px;
+    margin-left: 30px;
+}
+
+.c-text {
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+.b-text {
+    font-size: 18px;
+    font-weight: bolder;
+    color: #1188ff;
+}
+
+.dbConnInfoPanel {
+    margin-left: 30px;
+}
+
+.dbForm {
+    border-style: none;
+    margin-top: 10px;
+    font-size: 14px;
+
+}
+
+.dbForm td {
+    border-style: none;
+    line-height: 50px;
+}
+
+.formInput {
+    display: inline-block;
+    width: 500px;
+    box-sizing: border-box;
+    height: 32px;
+    padding: 4px 10px;
+    border: 1px solid #ccc;
+    line-height: 22px;
+    color: #888;
+}
+
+.savebtn {
+    height: 30px;
+    line-height: 30px;
+    color: #666;
+}
+
+.savebtn img {
+    top: 7px;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>快速开发工具</title>
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="lib/ligerUI/skins/Aqua/css/ligerui-all.css" type="text/css" />
+    <link rel="stylesheet" href="css/index.css" />
+
+    <script type="text/javascript" src="lib/jquery/jquery-1.9.0.min.js"></script>
+    <script type="text/javascript" src="lib/ligerUI/js/ligerui.all.js"></script>
+    <script type="text/javascript" src="lib/jquery.cookie.js"></script>
+    <script type="text/javascript" src="lib/json2.js"></script>
+
+    <script type="text/javascript" src="js/indexdata.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</head>
+
+<body>
+    <!-- 动画加载div -->
+    <div id="pageloading"></div>
+
+    <div id="titlePanel"></div>
+
+    <div id="pageLayout">
+        <div position="left" title="功能菜单" id="menuPanel">
+            <div title="数据设定">
+                <ul id="sjjcTree" style="margin-top:3px;"></ul>
+            </div>
+            <div title="报表设定">
+                <div style=" height:7px;"></div>
+            </div>
+            <div title="图表设定">
+                <div style=" height:7px;"></div>
+            </div>
+            <div title="布局设定">
+                <div style=" height:7px;"></div>
+            </div>
+        </div>
+        <div position="center" id="framecenter">
+            <div tabid="home" title="我的主页" style="height:300px">
+                <iframe frameborder="0" name="home" id="home" src="welcome.html"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <div id="footPanel"></div>
+</body>
+
+</html>
