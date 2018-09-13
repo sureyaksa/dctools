@@ -6,6 +6,8 @@ var accordion = null;
 var tree = null;
 //标签数组
 var tabItems = [];
+//
+var _iframeHeight = 0;
 
 $(function () {
 
@@ -148,11 +150,9 @@ $(function () {
     tree = liger.get("sjjcTree");
 
     setTimeout(function () {
-        $('#pageloading').hide()
+        $('#pageloading').hide();
+        setWH2Cookie();
     }, 500);
-
-    iframeHeight = $('#home').css('height');
-    iframeWidth = $('#home').css('width');
 
 });
 
@@ -160,9 +160,12 @@ $(window).resize(function () {
     setWH2Cookie();
 });
 
-function setWH2Cookie() { 
-    $.cookie('_iframeHeight',$('#home').css('height'));
-    $.cookie('_iframeWidth',$('#home').css('width'));
+function setWH2Cookie() {
+    
+    setTimeout(function () {
+        _iframeHeight = $('#pageLayout').height() - 28;
+    }, 300);
+    
 }
 
 function ref(){

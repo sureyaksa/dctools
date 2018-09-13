@@ -1,10 +1,10 @@
 var _tree = null;
 
-var mysql = '../../../web/lib/images/mysql_icon.png';
-var db2 = '../../../web/lib/images/db2.png';
-var oracle = '../../../web/lib/images/oracle_icon.png';
-var user = '../../../web/lib/images/user.png';
-var save = '../../../web/lib/images/save.gif';
+var mysql = '../../../lib/images/mysql_icon.png';
+var db2 = '../../../lib/images/db2.png';
+var oracle = '../../../lib/images/oracle_icon.png';
+var user = '../../../lib/images/user.png';
+var save = '../../../lib/images/save.gif';
 
 var _treeData = [{
         text: 'oracle数据库',
@@ -53,13 +53,7 @@ var _treeData = [{
 
 $(function () {
 
-
-    alert($.cookie('_iframeHeight'));
-    alert($.cookie('_iframeWidth'));
-
-    var height = document.body.clientHeight - 6;
-
-    $('.dbTreePanel').css('height', height);
+    $('.dbTreePanel').css('height', window.parent._iframeHeight - 6);
 
     //数据库连接树
     _tree = $('#tree').ligerTree({
@@ -81,6 +75,7 @@ $(function () {
         }]
     });
 
+    //右键菜单
     $(document).bind("contextmenu", function (e) {
         menu.show({
             top: e.pageY,
@@ -113,9 +108,10 @@ $(function () {
 });
 
 $(window).resize(function () {
-    
-    height = document.body.clientHeight - 6;
-    $('.dbTreePanel').css('height', height);
+    setTimeout(function () {
+        $('.dbTreePanel').css('height', window.parent._iframeHeight - 6);
+    }, 600);
+
 });
 
 function ref() {
